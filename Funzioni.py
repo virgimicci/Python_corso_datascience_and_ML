@@ -67,6 +67,16 @@ for item in l1:
         print(item)
         
         
-        
-        
-        
+## Funzione lambda
+# riduce la funzione ad una sola riga, rende il codice piu snello
+
+def square(x):
+    return(x*x)
+
+square(9)
+
+sq2 = lambda x : x*x        
+
+num = [2, 4, 7, 9]
+list(map(sq2, num)
+
