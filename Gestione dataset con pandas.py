@@ -66,3 +66,35 @@ pd.DataFrame(np.random.poisson(100, (10, 5)))
 
 # uniforme
 pd.DataFrame(np.random.uniform(1, 100,  (10, 5)))
+
+
+## Matplotlib : pacchetto per la creazione di grafici (gia presente in anaconda)
+
+import matplotlib as mlp
+import matplotlib.pyplot as plt
+
+plt.plot([5,7,2,4]) # grafico con linea di defoult
+plt.plot([5,7,2,4], [4,6,9,2], 'ro') # ro (round obj) inserisce pallini e non linea
+
+# creiamo due oggetti
+
+x = [50, 70, 90, 65]
+y = [129, 192, 163, 172]
+
+plt.plot(x, y, linewidth = 1.0, ls = '-' #linestyle
+         , marker = "o" # scelgo il marker dei dati sulla linea
+         , markersize = 10, markerfacecolor = 'white') # personalizzazione
+
+help(plt.plot) # per visualizzare la documentazione relativa alla funzione
+
+# personalizzazione grafico
+plt.plot(x, y, color = "yellow")
+plt.title("TITLE", color = "blue")
+plt.xlabel("Asse X", color = "purple")
+plt.ylabel("Asse Y", color = "green")
+
+# altri grafici
+plt.pie()
+plt.scatter()
+plt.bar()
+
